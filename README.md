@@ -98,3 +98,9 @@ Do not execute operating-system commands solely because a voice transcript conta
 undefined
 
 For reproducible updates, record the dataset/source version, environment and dependency versions, preprocessing choices, and actual outputs from each run. Keep sample values clearly labelled and do not publish secrets or private data.
+
+### Technical Deep Dive
+
+A maintainable voice pipeline separates microphone capture, speech-to-text, intent/response handling, and text-to-speech. Pass plain text or typed result objects between these components so recognition and speech output can be tested independently. Handle microphone permission errors, silence, timeouts, and unrecognized speech as normal application states.
+
+Suggested engineering checks: add a configurable input device, log timings without storing raw audio by default, and require explicit confirmation before any action that changes files, sends messages, or controls the operating system.
