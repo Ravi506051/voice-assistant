@@ -92,3 +92,9 @@ B.Tech Information Technology | Python | AI/ML | Data Science
 ## Safety and Privacy
 
 Do not execute operating-system commands solely because a voice transcript contains them. Restrict automation to explicitly supported actions, validate inputs, and ask for confirmation before actions that modify files, send messages, or affect accounts. Keep credentials outside source control.
+
+## Project Development Notes
+
+undefined
+
+For reproducible updates, record the dataset/source version, environment and dependency versions, preprocessing choices, and actual outputs from each run. Keep sample values clearly labelled and do not publish secrets or private data.
