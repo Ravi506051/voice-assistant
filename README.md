@@ -81,3 +81,14 @@ B.Tech Information Technology | Python | AI/ML | Data Science
 ---
 
 ⭐ If you find this project useful, consider starring the repository.
+
+## Testing Checklist
+
+- Test speech input in a quiet environment and with realistic background noise.
+- Check how the application behaves when the microphone is unavailable or speech cannot be recognized.
+- Verify that spoken responses remain understandable and that the assistant handles empty or unclear input safely.
+- Test each supported command individually before demonstrating the application.
+
+## Safety and Privacy
+
+Do not execute operating-system commands solely because a voice transcript contains them. Restrict automation to explicitly supported actions, validate inputs, and ask for confirmation before actions that modify files, send messages, or affect accounts. Keep credentials outside source control.
