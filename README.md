@@ -112,3 +112,11 @@ Suggested engineering checks: add a configurable input device, log timings witho
 - Keep API credentials in environment variables and never commit local configuration or audio recordings containing private information.
 - Test the assistant with varied accents, speaking speeds, noisy environments, and commands it should refuse or ask the user to clarify.
 - Document the actual speech-recognition and TTS providers configured in this repository; optional integrations should not be described as built-in features until implemented.
+
+## Reliability and Safety Considerations
+
+- Separate microphone capture, speech-to-text, intent handling, response generation, and text-to-speech into testable components.
+- Handle microphone permission errors, silence, recognition timeouts, and unavailable audio devices gracefully.
+- Require confirmation before any action that changes files, settings, or external systems.
+- Keep API credentials outside source control and make external-service dependencies configurable.
+- Test recognition quality with different accents, speaking speeds, and background-noise levels.
