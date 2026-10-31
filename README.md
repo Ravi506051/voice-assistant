@@ -104,3 +104,11 @@ For reproducible updates, record the dataset/source version, environment and dep
 A maintainable voice pipeline separates microphone capture, speech-to-text, intent/response handling, and text-to-speech. Pass plain text or typed result objects between these components so recognition and speech output can be tested independently. Handle microphone permission errors, silence, timeouts, and unrecognized speech as normal application states.
 
 Suggested engineering checks: add a configurable input device, log timings without storing raw audio by default, and require explicit confirmation before any action that changes files, sends messages, or controls the operating system.
+
+## Reliability, Privacy, and Testing
+
+- Separate microphone capture, speech-to-text, intent handling, response generation, and text-to-speech into independently testable components.
+- Handle microphone permission failures, background noise, empty transcripts, timeouts, and unavailable speech services gracefully.
+- Keep API credentials in environment variables and never commit local configuration or audio recordings containing private information.
+- Test the assistant with varied accents, speaking speeds, noisy environments, and commands it should refuse or ask the user to clarify.
+- Document the actual speech-recognition and TTS providers configured in this repository; optional integrations should not be described as built-in features until implemented.
