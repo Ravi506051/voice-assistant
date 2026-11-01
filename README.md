@@ -120,3 +120,10 @@ Suggested engineering checks: add a configurable input device, log timings witho
 - Require confirmation before any action that changes files, settings, or external systems.
 - Keep API credentials outside source control and make external-service dependencies configurable.
 - Test recognition quality with different accents, speaking speeds, and background-noise levels.
+
+## Maintainer's Engineering Notes
+
+- Keep microphone capture, speech recognition, intent handling, response generation, and text-to-speech as separate components.
+- Handle silence, microphone permission failures, timeouts, and unavailable speech services without crashing.
+- Require explicit confirmation before any voice-triggered action that changes files, settings, or external accounts.
+- Store provider credentials outside source control and avoid retaining raw audio unless the user explicitly chooses to.
