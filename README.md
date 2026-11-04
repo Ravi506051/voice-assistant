@@ -34,3 +34,14 @@ Add multilingual interaction, configurable voices, wake-word support, automated 
 
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
+
+## Skills Demonstrated
+
+- Speech-to-text and text-to-speech integration
+- microphone input handling
+- Python application design
+- API and privacy considerations.
+
+## Portfolio Context
+
+This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
