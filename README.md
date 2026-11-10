@@ -45,3 +45,11 @@ Add multilingual interaction, configurable voices, wake-word support, automated 
 ## Portfolio Context
 
 This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
+
+## Reliability and User Experience
+
+A robust voice interface should handle noisy audio, silence, recognition timeouts, unsupported commands, and unavailable microphones gracefully. Keep speech recognition, intent handling, and text-to-speech as separate components so each stage can be tested and replaced independently.
+
+## Privacy and Safety
+
+Request microphone access only when needed, explain whether audio is sent to an external service, and avoid storing recordings by default. Ask for confirmation before carrying out commands that send messages, modify files, or affect external accounts.
