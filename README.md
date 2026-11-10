@@ -53,3 +53,10 @@ A robust voice interface should handle noisy audio, silence, recognition timeout
 ## Privacy and Safety
 
 Request microphone access only when needed, explain whether audio is sent to an external service, and avoid storing recordings by default. Ask for confirmation before carrying out commands that send messages, modify files, or affect external accounts.
+
+## Further Engineering Notes
+
+- **Component boundaries:** Keep audio capture, speech recognition, request handling, and speech synthesis as separate responsibilities where practical.
+- **Robustness:** Test silence, background noise, unclear speech, microphone failures, and unavailable network services.
+- **Privacy:** Make microphone access clear and avoid retaining recordings or transcripts unless explicitly required.
+- **Next steps:** Add configurable voice settings, graceful error messages, and tests for request-processing logic.
